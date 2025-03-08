@@ -64,4 +64,19 @@ class Index extends Component
         // setting property isOpenModal true
         $this->isOpenModal = true;
     }
+
+    public function closeModal()
+    {
+        // setting property isOpenModal false
+        $this->isOpenModal = false;
+    }
+
+    public function productStore()
+    {
+        // menjalankan rule validasi, memanggil method bawaan laravel validate(), disertakan data rule dari property rules
+        $this->validate($this->rules);
+
+        // upload file gambar di storage/product_images
+        $this->productImage->storeAs('product_images', $this->productImage->hashName(), 'public');
+    }
 }
