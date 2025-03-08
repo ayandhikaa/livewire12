@@ -5,10 +5,12 @@ namespace App\Livewire\Product;
 use Livewire\Component;
 use App\Models\Product;
 use Livewire\WithPagination;
+use Livewire\WithFileUploads;
 
 class Index extends Component
 {
     use WithPagination;
+    use WithFileUploads;
 
     // property untuk mencatat data rows per page, nilai default 10
     public $rowsPerPage = 10;

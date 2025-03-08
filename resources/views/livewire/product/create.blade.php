@@ -5,7 +5,7 @@
             {{-- field name, nama element diberi nama productName --}}
                 <div class="mb-4">
                     <label for="exampleFormControlInput1" class="block text-gray-700 text-sm font-bold mb-2">Product Name:</label>
-                    <input wire:model='productName' type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput1" placeholder="Enter Title" wire:model="title">
+                    <input wire:model='productName' type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput1" placeholder="Enter Name Product" wire:model="productName">
                     @error('productName') <span class="text-red-500">{{ $message }}</span>@enderror
                 </div>
             {{-- field name --}}
@@ -13,7 +13,7 @@
             {{-- field description, nama element diberi nama productDescription --}}
                 <div class="mb-4">
                     <label for="exampleFormControlInput2" class="block text-gray-700 text-sm font-bold mb-2">Product Description:</label>
-                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput2" wire:model="body" placeholder="Enter Body"></textarea>
+                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput2" wire:model="productDescription" placeholder="Enter Description Product"></textarea>
                     @error('productDescription') <span class="text-red-500">{{ $message }}</span>@enderror
                 </div>
             {{-- field description --}}  
