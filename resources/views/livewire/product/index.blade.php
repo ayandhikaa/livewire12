@@ -89,13 +89,13 @@
                                 </td>
                                 <td>
                                     <div class="flex space-x-2 p-6">
-                                        <button class="px-2 py-1 text-sm font-medium bg-blue-500 text-white rounded hover:bg-blue-600" wire:click="showProduct({{ $product->id }})">
+                                        <button class="px-2 py-1 text-sm font-medium bg-blue-500 text-white rounded hover:bg-blue-600" wire:click="productShow({{ $product->id }})">
                                             Show
                                         </button>
-                                        <button class="px-2 py-1 text-sm font-medium bg-yellow-500 text-white rounded hover:bg-yellow-600" wire:click="editProduct({{ $product->id }})">
+                                        <button class="px-2 py-1 text-sm font-medium bg-yellow-500 text-white rounded hover:bg-yellow-600" wire:click="productEdit({{ $product->id }})">
                                             Edit
                                         </button>
-                                        <button class="px-2 py-1 text-sm font-medium bg-red-500 text-white rounded hover:bg-red-600" wire:click="deleteProduct({{ $product->id }})">
+                                        <button class="px-2 py-1 text-sm font-medium bg-red-500 text-white rounded hover:bg-red-600" wire:click="productDelete({{ $product->id }})">
                                             Delete
                                         </button>
                                     </div>
