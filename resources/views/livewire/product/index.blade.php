@@ -85,7 +85,7 @@
                                 </td>
                                 <td class="px-6 py-4">
                                     {{-- {{ $product->image }} --}}
-                                    <img src="{{ asset('storage/images/' . $product->image) }}" class="w-10 h-10 object-cover rounded-full">
+                                    <img src="{{ asset('storage/product_images/' . $product->image) }}" class="w-10 h-10 object-cover rounded-full">
                                 </td>
                                 <td>
                                     <div class="flex space-x-2 p-6">
